@@ -1,5 +1,19 @@
 {% extends "proyectowebapp/base.html" %}
+
 {% load static %}
+
    {% block content %}
-   <p style='color: white;'> {{miFormulario}} </p>
-   {% endblock %}
+
+   <div class="contenedorFormulario">
+
+      <form accion="" method="POST" style="text-align: center;">
+
+         <table style='color: white; margin: 20px auto;'> {{miFormulario.as_table}} </table> 
+         
+         <input type="submit" value="Enviar" style = "width: 150px;">
+
+      </form>     
+   
+   </div>
+
+{% endblock %}
