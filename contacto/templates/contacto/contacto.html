@@ -6,6 +6,12 @@
 
    <div class="contenedorFormulario">
 
+      {% if "valido" in request.GET %}
+
+         <p style = 'color: white;'>Informacion enviada correctamente, gracias</p>
+
+      {% endif %}
+
       <form accion="" method="POST" style="text-align: center;">
 
          {% csrf_token %}
